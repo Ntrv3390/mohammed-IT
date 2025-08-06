@@ -7,7 +7,7 @@ export function MacbookScrollWrapper() {
       <MacbookScroll
         title={
           <span>
-            We're Your trusted PARTNER for comprehensive
+            We&apos;re Your trusted PARTNER for comprehensive
             <br /> IT solutions.
           </span>
         }

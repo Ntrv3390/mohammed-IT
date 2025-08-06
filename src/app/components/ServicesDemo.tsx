@@ -2,6 +2,7 @@
 import React from "react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function ServicesDemo(props: any) {
   return (
     <div className="flex flex-col overflow-hidden">

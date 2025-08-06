@@ -49,7 +49,7 @@ export function Hero() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          We're a leading emerging software company with a 100% client satisfaction rate.
+          We&apos;re a leading emerging software company with a 100% client satisfaction rate.
         </motion.p>
         <motion.div
           initial={{
