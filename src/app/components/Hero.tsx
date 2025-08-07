@@ -4,6 +4,12 @@ import { motion } from "motion/react";
 import { Navbar } from "./Navbar";
 
 export function Hero() {
+  const smoothScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="relative my-5 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
       <Navbar />
@@ -49,7 +55,8 @@ export function Hero() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          We&apos;re a leading emerging software company with a 100% client satisfaction rate.
+          We&apos;re a leading emerging software company with a 100% client
+          satisfaction rate.
         </motion.p>
         <motion.div
           initial={{
@@ -64,11 +71,17 @@ export function Hero() {
           }}
           className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-            Explore Now
+          <button
+            onClick={() => smoothScroll("works")}
+            className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+          >
+            View Past Work
           </button>
-          <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-            Contact Support
+          <button
+            onClick={() => smoothScroll("contact")}
+            className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900"
+          >
+            Contact Us
           </button>
         </motion.div>
         <motion.div

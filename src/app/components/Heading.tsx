@@ -3,7 +3,7 @@ import { cn } from "../lib/utils";
 
 export function Heading() {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+    <div id="works" className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
       <div
         className={cn(
           "absolute inset-0",
